@@ -1,0 +1,73 @@
+body {
+    background-image: url("../images/angela-compagnone-1381775-unsplash.jpg");
+    min-height: 100vh;
+    z-index: -10;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.hero {
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(10, 39, 86, 0.5);
+}
+
+h1 {
+    margin-top: 2em;
+    display: 1;
+    margin-bottom: 1em;
+
+}
+
+.firstParagraph,
+.secondParagraph {
+    font-size: 1.5em;
+}
+
+form {
+    display: inline;
+}
+
+.listItems ul {
+    list-style: none;
+    margin-top: 2em;
+    border-top: 2px solid white;
+    /*display: none; */
+}
+
+li {
+    border-bottom: 1px solid white;
+    padding: 0.5em 0;
+}
+
+input[type=checkbox] {
+    position: static;
+    float: right;
+    height: 1.3em;
+    width: 1.3em;
+    border: 1px solid white;
+}
+
+input.remove {
+    position: static;
+    float: left;
+    height: 1.3em;
+    padding: 5px 30px 0 0;
+}
+
+input[type=checkbox]:checked~label {
+    text-decoration: line-through;
+    color: darkgray;
+}
+
+.input-group {
+    margin-bottom: 2em;
+}
