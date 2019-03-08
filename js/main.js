@@ -6,16 +6,15 @@ function TheList(listItem) {
 
 var todo1 = new TheList("Feed the cat", false);
 var todo2 = new TheList("Wash the dishes", false);
-var todo3 = new TheList("Buy milk", false);
+var todo3 = new TheList("Hire Tom", false);
 
 var myList = [todo1, todo2, todo3];
 
 function printList() {
 
-    localStorage.setItem("list", JSON.stringify(myList));
-
-    myList = JSON.parse(localStorage.getItem("list"));
-
+    if (localStorage.getItem("list")) {
+        myList = JSON.parse(localStorage.getItem("list"));
+    }
     var routineList = "";
 
     for (var i = 0; i < myList.length; i++) {
@@ -34,6 +33,8 @@ function printList() {
     for (var i = 0; i < deleteFromList.length; i++) {
         deleteFromList[i].addEventListener('click', remove);
     };
+
+
 }
 
 //Toggle between checked and unchecked items

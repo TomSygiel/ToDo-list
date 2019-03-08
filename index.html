@@ -26,13 +26,13 @@
 
             <div class="text-center">
                 <h1>To-do List</h1>
-                <button onclick="printList()" id="button-print-list" type="submit" class="btn btn-primary">Print to-do
+                <button onclick="printList()" id="button-print-list" type="submit" class="btn btn-primary">View to-do
                     list</button>
                 <button onclick="sortList()" id="button-sort" type="submit" class="btn btn-primary">Sort done items</button>
             </div>
 
             <div class="row  listItems">
-                <ul id="resultList" class="col-12 col-lg-8 mx-auto">
+                <ul id="resultList" class="col-10 col-md-8 mx-auto">
                 </ul>
             </div>
 
@@ -41,11 +41,10 @@
             </div>
 
             <div class="row">
-                <div class="col-12 col-md-8 mx-auto input-group">
+                <div class="col-10 col-md-8 mx-auto input-group">
                     <input id="inputListItem" type="text" class="form-control" aria-describedby="To-do list input"
                         placeholder="Enter to-do item">
-                    <button onclick="addToDo()" id="button" type="submit" class="btn btn-primary">Add item to the
-                        list</button>
+                    <button onclick="addToDo()" id="button" type="submit" class="btn btn-primary">Add to list</button>
                 </div>
             </div>
 
