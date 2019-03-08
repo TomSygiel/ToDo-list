@@ -1,5 +1,5 @@
 body {
-    background-color: #091627;
+    background-color: #03060B;
     background-image: url("../images/angela-compagnone-1381775-unsplash.jpg");
     min-height: 100vh;
     z-index: -10;
@@ -18,7 +18,7 @@ body {
     min-width: 100vw;
     top: 0;
     bottom: 0;
-    background-color: rgb(10, 39, 86, 0.5);
+    background-color: rgb(3, 6, 11, 0.3);
 }
 
 h1 {
